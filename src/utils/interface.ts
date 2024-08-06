@@ -12,11 +12,6 @@ export interface userRequest {
   password: string
 }
 
-export interface userLogin {
-  userName: string,
-  password: string,
-}
-
 export interface userUpdateRequest {
   firstName: string,
   lastName:  string,
@@ -28,8 +23,4 @@ export interface userUpdatePassword {
   userName: string,
   password: string,
   newPassword: string
-}
-
-export interface thunkApiState {
-
 }

@@ -2,7 +2,6 @@ import { useState } from "react"
 import { registerFetch } from "../../features/actions/accountAcrion"
 import { useAppDispatch, useAppSelector } from "../../app/hooks"
 import type { userRequest } from "../../utils/interface"
-import { encryptedToken } from "../../utils/constans"
 
 const Register = () => {
   //TODO create style, inputs and button
@@ -21,7 +20,7 @@ const Register = () => {
   console.log(user)
 
   const handleClickRegister = () => {
-    const token = encryptedToken(email, password);
+    // const token = encryptedToken(email, password);
 
     const user: userRequest = {
       firstName,
